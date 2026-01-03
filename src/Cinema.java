@@ -1,21 +1,23 @@
 public class Cinema {
-    private String cinemaName;
-    private int seats;
 
-    public Cinema(String cinemaName, int seats){
-        this.cinemaName = cinemaName;
-        this.seats = seats;
+    private Film film;
+    private Viewer viewer;
+
+    public Cinema(Film film, Viewer viewer) {
+        this.film = film;
+        this.viewer = viewer;
     }
-    public String getCinemaName(){
-        return cinemaName;
+
+    public Film getFilm() {
+        return film;
     }
-    public int getSeats(){
-        return seats;
+
+    public Viewer getViewer() {
+        return viewer;
     }
-    public void setCinemaName(){
-        this.cinemaName = cinemaName;
-    }
-    public void setSeats(){
-        this.seats = seats;
+
+    @Override
+    public String toString() {
+        return viewer.getName() + " booked film " + film.getTitle();
     }
 }

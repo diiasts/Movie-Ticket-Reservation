@@ -1,21 +1,15 @@
-public class Viewer {
-    private String name;
+public class Viewer extends Person{
+
     private int age;
 
-    public Viewer(String name, int age){
-        this.name = name;
+    public Viewer (String name, int age){
+        super(name);
         this.age = age;
     }
-    public String getName(){
-        return name;
-    }
+    @Override
+    public String getRole() { return "Viewer"; }
     public int getAge(){
         return age;
     }
-    public void setName(String name){
-        this.name = name;
-    }
-    public void setAge(int age){
-        this.age = age;
-    }
+
 }

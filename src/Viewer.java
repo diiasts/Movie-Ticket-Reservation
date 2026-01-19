@@ -7,7 +7,7 @@ public class Viewer extends Person{
         this.age = age;
     }
     @Override
-    public String getRole() { return "Viewer"; }
+    public String getRole() { return " Viewer"; }
     public int getAge(){
         return age;
     }

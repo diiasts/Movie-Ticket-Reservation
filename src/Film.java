@@ -1,6 +1,7 @@
 import java.util.Objects;
 
 public class Film {
+    private int idFilm;
     private String title;
     private int price;
 
@@ -9,13 +10,18 @@ public class Film {
         this.price = price;
     }
 
+    public int getIdFilm(){return this.idFilm;}
+    public void setIdFilm(int idFilm){this.idFilm = idFilm;}
+
    public String getTitle(){
         return title;
    }
+   public void setTitle(String title){}
 
    public int getPrice(){
         return price;
    }
+   public void setPrice(int price){}
 
    @Override
    public boolean equals (Object o) {

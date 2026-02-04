@@ -1,3 +1,5 @@
+package kz.movie;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +14,7 @@ public class FilmRepository {
             pstmt.setString(1, film.getTitle());
             pstmt.setInt(2, film.getPrice());
             pstmt.executeUpdate();
-            System.out.println("Film added successfully");
+            System.out.println("kz.movie.Film added successfully");
 
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
@@ -63,7 +65,7 @@ public class FilmRepository {
 
             pstmt.setInt(1, id);
             pstmt.executeUpdate();
-            System.out.println("Film deleted successfully");
+            System.out.println("kz.movie.Film deleted successfully");
 
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();

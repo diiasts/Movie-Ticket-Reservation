@@ -1,3 +1,5 @@
+package kz.movie;
+
 public class Cinema {
 
     private Film film;

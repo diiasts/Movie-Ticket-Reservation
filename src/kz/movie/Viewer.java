@@ -1,4 +1,6 @@
-public class Viewer extends Person{
+package kz.movie;
+
+public class Viewer extends Person {
 
     private int age;
 
@@ -7,7 +9,7 @@ public class Viewer extends Person{
         this.age = age;
     }
     @Override
-    public String getRole() { return " Viewer"; }
+    public String getRole() { return " kz.movie.Viewer"; }
     public int getAge(){
         return age;
     }

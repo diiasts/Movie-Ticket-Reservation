@@ -1,9 +1,13 @@
+package kz.movie;
+
 import java.util.Objects;
 
 public class Film {
     private int idFilm;
     private String title;
     private int price;
+
+    public Film() {}
 
     public Film(String title, int price) {
         this.title = title;
@@ -33,7 +37,7 @@ public class Film {
 
     @Override
     public String toString() {
-        return "Film{title='" + title + "', price=" + price + "}";
+        return "kz.movie.Film{title='" + title + "', price=" + price + "}";
     }
 
     @Override
